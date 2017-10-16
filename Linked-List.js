@@ -47,13 +47,23 @@ function create() {
   <button class="delete id="delBtn${i}"">Delete</button>
   </article>`)
   $(`.delete`).on('click', deleteCard);
-  
+  $('.read-btn').on('click', readEventListener);
     // $(`#art${i}`).remove();
   }
 
 function deleteCard() {
   $(this).parent().remove();
 };
+
+function readEventListener(btnClass) {
+  $(this).parent().toggleClass('read');
+  // $("." + btnClass).click(function(){
+  //   $("." + btnClass).toggleClass('read');
+  //   $("." + btnClass).parent().toggleClass('read');
+  // })
+}
+
+
 
 // '<article id=\"' + 'art' + i + '\">' +
 //     '<h2>' + titleInput.val() + '</h2><hr><a href=' + '\"' + urlInput.val() + '\"' + '>' + urlInput.val() + '</a>' + 

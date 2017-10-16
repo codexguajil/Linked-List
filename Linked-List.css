@@ -8,6 +8,10 @@
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 
+.read {
+  color: #F05A28 !important;
+  background-color: #F2F4F4 !important;
+}
 
 body {
   margin: 0;
@@ -91,7 +95,7 @@ a {
   text-decoration-color: #F2F2F4;
 }
 
-.read, .delete {
+.read-btn, .delete {
   border: none;
   background-color: #FFFFFF;
   color: #455A64;
@@ -99,6 +103,8 @@ a {
   text-decoration: underline;
   text-decoration-color: #F2F2F4;
   font-size: 12px;
+  outline: none;
+  cursor: pointer;
 }
 
 .delete {
